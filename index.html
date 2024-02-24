@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<main>
+    <div class="content">
+        <p id="car0"></p>
+        <br>
+        <p id="car1"></p>
+        <br>
+        <p id="car2"></p>
+        <br>
+        <p id="car3"></p>
+        <br>
+        <p id="car4"></p>
+        <br>
+    </div>
+</main>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body{
+            background-image: url(desktop-wallpaper-anime-drift-90s-jdm-aesthetic-ps4.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        p{
+            text-align: center;
+            font-family: "Protest Strike", sans-serif;
+            color: white;
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        .content{
+            backdrop-filter: blur(30px);
+            /* transform: translateY(250px); */
+            padding: 20px;
+            box-shadow: 0 0 10px black;
+            border-radius: 20px  ;
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+
+    <script>
+        const car0 ={
+            carBrand: "toyota",
+            carName: "supra",
+            carYear: 1993,
+            carAge: 31,
+        };
+        const car1 ={
+            carBrand: "nissan",
+            carName: "gtr r34",
+            carYear: 1998,
+            carAge: 26,
+        };
+        const car2 ={
+            carBrand: "honda",
+            carName: "civic",
+            carYear: 1997,
+            carAge: 25,
+        };
+        const car3 ={
+            carBrand: "mazda",
+            carName: "rx7",
+            carYear: 1978,
+            carAge: 46,
+        };
+        const car4 ={
+            carBrand: "mitsubishi",
+            carName: "evo5",
+            carYear: 1998,
+            carAge: 24,
+        };
+        
+
+        // console.log(car);
+
+        document.getElementById("car0").innerHTML = 
+        car0.carBrand + " " + "has a" + " " + car0.carName + " " + "released in a year" + " " + car0.carYear + " " + "and the age of this on a present is" + " "   + car0.carAge;
+    
+        document.getElementById("car1").innerHTML = 
+        car1.carBrand + " " + "has a" + " " + car1.carName + " " + "released in a year" + " " + car1.carYear + " " + "and the age of this on a present is" + " "   + car1.carAge;
+        
+        document.getElementById("car2").innerHTML = 
+        car2.carBrand + " " + "has a" + " " + car2.carName + " " + "released in a year" + " " + car2.carYear + " " + "and the age of this on a present is" + " "   + car2.carAge;
+        
+        document.getElementById("car3").innerHTML = 
+        car3.carBrand + " " + "has a" + " " + car3.carName + " " + "released in a year" + " " + car3.carYear + " " + "and the age of this on a present is" + " "   + car3.carAge;
+        
+        document.getElementById("car4").innerHTML = 
+        car4.carBrand + " " + "has a" + " " + car4.carName + " " + "released in a year" + " " + car4.carYear + " " + "and the age of this on a present is" + " "   + car4.carAge;
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
